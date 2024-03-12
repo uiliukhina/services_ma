@@ -17,7 +17,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y python3-pip
-          pip install -r requirements.txt
+          pip install -r ./booking-service/requirements.txt
+          pip install -r ./hotel-catalog-service/requirements.txt
 
       - name: Run unit tests
         run: |
