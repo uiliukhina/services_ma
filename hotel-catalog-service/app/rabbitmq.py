@@ -41,7 +41,7 @@ async def send_new_booking(connection: Connection, bkng: Recomendation):
 
     await channel.default_exchange.publish(
         Message(body=message_body.encode()),
-        routing_key='mikhienkov_update_queue'
+        routing_key='ilukhina_update_queue'
     )
 
     await channel.close()

@@ -36,7 +36,7 @@ async def consume(loop: AbstractEventLoop) -> AbstractRobustConnection:
 
     print("Consuming...")
 
-    new_hotel_queue = await channel.declare_queue('mikhienkov_update_queue', durable=True)
+    new_hotel_queue = await channel.declare_queue('ilukhina_update_queue', durable=True)
 
     await new_hotel_queue.consume(process_new_booking)
 
