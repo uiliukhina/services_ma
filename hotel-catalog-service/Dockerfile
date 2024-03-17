@@ -10,7 +10,7 @@ COPY ./hotel-catalog-service/app /hotel-service/app
 COPY ./hotel-catalog-service/alembic /hotel-service/alembic
 COPY ./hotel-catalog-service/alembic.ini /hotel-service/alembic.ini
 
-EXPOSE 80
+EXPOSE 82
 
 CMD ["/bin/sh", "-c", \
     "uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]

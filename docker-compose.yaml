@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: ./hotel-catalog-service/Dockerfile
     ports:
-      - "80:80"
+      - "82:82"
 
 
   booking:

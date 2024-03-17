@@ -55,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build docker rec image
+      - name: Build docker booking image
         run: |
           docker build . -f ./booking-service/Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/booking-service:latest
 
@@ -67,7 +67,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
 
-      - name: Build and push rec service image
+      - name: Build and push booking service image
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/booking-service:latest
   
